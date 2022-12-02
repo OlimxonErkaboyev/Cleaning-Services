@@ -1,7 +1,65 @@
+/* outfit-500 - latin */
+@font-face {
+  font-family: 'Outfit';
+  font-style: normal;
+  font-weight: 500;
+  src: local(''),
+  url('../fonts/outfit-v6-latin-500.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+  url('../fonts/outfit-v6-latin-500.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* outfit-600 - latin */
+@font-face {
+  font-family: 'Outfit';
+  font-style: normal;
+  font-weight: 600;
+  src: local(''),
+  url('../fonts/outfit-v6-latin-600.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+  url('../fonts/outfit-v6-latin-600.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* outfit-700 - latin */
+@font-face {
+  font-family: 'Outfit';
+  font-style: normal;
+  font-weight: 700;
+  src: local(''),
+  url('../fonts/outfit-v6-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+  url('../fonts/outfit-v6-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+@font-face {
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 400;
+  src: local(''),
+  url('../fonts/rubik-v21-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+  url('../fonts/rubik-v21-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* rubik-500 - latin */
+@font-face {
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 500;
+  src: local(''),
+  url('../fonts/rubik-v21-latin-500.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+  url('../fonts/rubik-v21-latin-500.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* rubik-700 - latin */
+@font-face {
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 700;
+  src: local(''),
+  url('../fonts/rubik-v21-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+  url('../fonts/rubik-v21-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
 :root {
-    /* --header-bg-color: #fff; */
-    /* --main-bg-color: #fff; */
-    /* main-text-color: #fff; */
+  --header-bg-color: #fff;
+  --hero-bg-color:#DBEBF8;
+  --main-bg-color: #F4F9FD;
+  --main-title-color: #050931;
+  --main-desc-color:#767877;
+  --main-btn-color:#1F6BFF;
 }
 
 /* GENERAL */
@@ -15,6 +73,10 @@ html {
 *::before,
 *::after {
   box-sizing: inherit;
+  list-style: none;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
 }
 
 body {
@@ -22,7 +84,8 @@ body {
   flex-direction: column;
   height: 100%;
   margin: 0;
-  font-family: "Arial", sans-serif;
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
   background-color: #fff;
 }
 
@@ -51,3 +114,69 @@ img {
   padding-right: 20px;
   padding-left: 20px;
 }
+
+.side-header{
+  padding-top: 27px;
+  padding-bottom: 26px;
+}
+
+.header-wrapper{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-end{
+  display: flex;
+  align-items: center;
+}
+.nav-list{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 565px;
+  margin-right: 195px;
+  margin-left: 280px;
+}
+
+.nav-item__link{
+  font-size: 18px;
+  line-height: 100%;
+  color: rgba(34, 35, 38, 0.8);
+}
+.nav-item__link:active{
+  font-weight: 600;
+  color: #222326;
+}
+
+.header-call{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hader-call__img{
+  width: 32px;
+  height: 32px;
+  padding: 10px;
+  border: 1px solid var(--main-btn-color);
+  border-radius: 50%;
+  margin-right: 5px;
+}
+
+.class_header-call_link{
+  display: flex;
+  flex-direction: column;
+  font-size: 18px;
+  line-height: 21px;
+  color: var(--main-title-color);
+}
+
+.header-call-title{
+  font-size: 16px;
+  line-height: 19px;
+  color: var(--main-title-color);
+  margin-bottom: 7px;
+}
+
+.
