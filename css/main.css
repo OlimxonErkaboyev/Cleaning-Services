@@ -360,7 +360,7 @@ img {
 
 .underline{
   display: flex;
-  align-items: center;
+  /* align-items: center; */
   justify-content: space-between;
 }
 .line{
@@ -382,6 +382,7 @@ img {
   font-weight: 500;
   font-size: 20px;
   line-height: 100%;
+  text-align: center;
   color: var(--main-title-color);
   margin-bottom: 4px;
 }
@@ -405,6 +406,7 @@ img {
   width: 500px;
 }
 .about-section-desc > strong>ins{
+  text-decoration: underline;
   color: #FE6B01;
 }
 
@@ -426,8 +428,268 @@ img {
   background-color: transparent;
   border: 3px solid var(--main-btn-color);
 }
-
-
-
-
 /* About Section Styles End */
+
+/* Service Section Styles Start */
+
+.service-section{
+  position: relative;
+  padding-top: 120px;
+  padding-bottom: 120px;
+  background:var(--main-bg-color);
+}
+
+.service-wrapper{
+  display: flex;
+  flex-direction: column;
+}
+
+.service-section-top{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.service-section-top::before{
+  position: absolute;
+  top: 0;
+  left: calc(50% - 850px);
+  content: "";
+  width: 256px;
+  height: 256px;
+  background-color: #BADAF4;
+  border-radius: 50%;
+}
+
+.service-section__title{
+  margin-bottom: 20px;
+  font-family: 'Outfit';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 120%;
+  text-align: center;
+  color: var(--main-title-color);
+}
+
+.service-section-desc{
+  width: 609px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 78px;
+  font-size: 18px;
+  line-height: 156%;
+  text-align: center;
+  color: var(--main-desc-color);
+  
+}
+
+.service-section-list{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 60px;
+}
+.service-list-item{
+  padding: 32px 32px 33px 32px;
+  background: var(--header-bg-color);
+  border: 1px solid #E3E3E3;
+  border-radius: 12px;
+  box-shadow: 0px 54px 80px -16px rgba(219, 222, 229, 0.8);
+}
+
+.service-box-title{
+  font-family: 'Outfit';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 100%;
+  color: var(--main-title-color);
+  margin-bottom: 20px;
+}
+.service-box-title::before{
+  display: block;
+  content: "";
+  width: 128px;
+  height: 128px;
+  background-image: url(../images/icons/cleaning-tools.png);
+  background-repeat: no-repeat;
+  background-position: center calc(50% + 18px);
+  background-color: rgba(255, 202, 69, 0.2);
+  box-shadow: 0px 17.3392px 36.1233px rgba(0, 0, 0, 0.05);
+  border-radius: 50%;
+  margin-bottom: 40px;
+}
+.service-list-item:nth-child(2)>.service-box-title::before{
+  display: block;
+  content: "";
+  width: 128px;
+  height: 128px;
+  background-image: url(../images/icons/office-cleaning.png);
+  background-repeat: no-repeat;
+  background-position: center calc(50% + 18px);
+  background-color:rgba(72, 183, 116, 0.2);;
+  box-shadow: 0px 17.3392px 36.1233px rgba(0, 0, 0, 0.05);
+  border-radius: 50%;
+  margin-bottom: 40px;
+}
+.service-list-item:nth-child(3)>.service-box-title::before{
+  display: block;
+  content: "";
+  width: 128px;
+  height: 128px;
+  background-image: url(../images/icons/home-cleaning.png);
+  background-repeat: no-repeat;
+  background-position: center calc(50% + 18px);
+  background-color:rgba(255, 131, 69, 0.2);
+  box-shadow: 0px 17.3392px 36.1233px rgba(0, 0, 0, 0.05);
+  border-radius: 50%;
+  margin-bottom: 40px;
+}
+
+.service-box-desc{
+  width: 356px;
+  font-size: 18px;
+  line-height: 156%;
+  color: var(--main-desc-color);
+  margin-bottom: 48px;
+}
+
+.service-btn{  
+  width: 180px;
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 166%;
+  color: var(--header-bg-color);
+  margin-right: auto;
+  margin-left: auto;
+  padding: 19px 40px 17px 40px;
+  background-color: var(--main-btn-color);
+  border: 3px solid var(--main-btn-color);
+  border-radius: 4px;
+}
+
+.service-btn:hover{
+  color: var(--main-btn-color);
+  background-color: transparent;
+  border: 3px solid var(--main-btn-color);
+}
+/* Service Section Styles End */
+
+/* How-We-Work Section Styles Start */
+
+.how-we-work-section{
+  background-image: url(../images/icons/circles-box.png);
+  background-repeat: no-repeat;
+  background-position: calc(50% + 834px) 0;
+  padding-top: 120px;
+  padding-bottom: 120px;
+  
+}
+
+.how-we-work__underline-title{
+  display: flex;
+  flex-direction: column;
+  width: 126px;
+  margin-bottom: 12px;
+}
+
+.start{
+  width: 57px;
+}
+
+.how-we-work__top{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 60px;
+}
+
+.how-we-work__title{
+  width: 555px;
+  font-family: 'Outfit';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 120%;
+  color: var(--main-title-color);
+}
+
+.how-we-work__desc{
+  width: 403px;
+  font-size: 18px;
+  line-height: 156%;
+  color: var(--main-desc-color);
+}
+
+.how-we-work__list{
+  display: flex;
+  justify-content: space-between;
+}
+
+.how-we-work-list__item{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 56px 40px 23px;
+  border-left: 1px solid #FF8345;
+}
+.how-we-work-list__item:nth-child(2){
+  border-left: 1px solid var(--main-btn-color);
+}
+.how-we-work-list__item:nth-child(3){
+  border-left: 1px solid #FFCA45;
+}
+.how-we-work-list__item:nth-child(4){
+  border-left: 1px solid #37D348;
+}
+
+.how-we-work__box-title{
+  width: 236px;
+  margin-bottom: 16px;
+  font-family: 'Outfit';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 100%;
+  text-align: center;
+  color: var(--main-title-color);
+}
+
+.how-we-work__box-title::before{
+  display: block;
+  content: "";
+  width: 107px;
+  height: 107px;
+  margin-right: auto;
+  margin-bottom: 32px;
+  margin-left: auto;
+  background-image: url(../images/one.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  
+}
+.how-we-work-list__item:nth-child(2)> .how-we-work__box-title::before{
+  background-image: url(../images/two.png);
+}
+.how-we-work-list__item:nth-child(3)> .how-we-work__box-title::before{
+  background-image: url(../images/three.png);
+}
+.how-we-work-list__item:nth-child(4)> .how-we-work__box-title::before{
+  background-image: url(../images/four.png);
+}
+
+.how-we-work__box-desc{
+  width: 258px;
+  font-size: 18px;
+  line-height: 156%;
+  text-align: center;
+  color: var(--main-desc-color);
+  margin-left: 23px;
+}
+
+
+
+/* How-We-Work Section Styles End */
