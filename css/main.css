@@ -216,7 +216,7 @@ img {
   color: var(--main-desc-color);
 }
 
-.hero-btn{
+.more-btn{
   font-family: 'Rubik';
   font-style: normal;
   font-weight: 500;
@@ -230,7 +230,7 @@ img {
   
 }
 
-.hero-btn:hover{
+.more-btn:hover{
   color: var(--main-btn-color);
   background-color: transparent;
   border: 3px solid var(--main-btn-color);
@@ -292,7 +292,7 @@ img {
   background-image: url(../images/icons/hero-users.svg);
   background-repeat: no-repeat;
   border-radius: 50%;
-
+  
 }
 
 .hero-end-box__title{
@@ -341,3 +341,93 @@ img {
 }
 
 /* Hero Section Styles End */
+/* About Section Styles Start */
+.about-section{
+  padding-top: 120px;
+  padding-bottom: 226px;
+  background-image: url(../images/about-bg.png);
+  background-repeat: no-repeat;
+  background-position: calc(50% + 366px) center;
+}
+
+.underline-title{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 89px;
+  margin-bottom: 12px;
+}
+
+.underline{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.line{
+  width: 38px;
+  height: 2px;
+  background:#FE6B01;
+  border-radius: 100px;
+}
+.nuqta{
+  width: 4px;
+  height: 4px;
+  background:#FE6B01;
+  border-radius: 50%;
+}
+
+.about-us{
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 100%;
+  color: var(--main-title-color);
+  margin-bottom: 4px;
+}
+
+.about-section-title{
+  width: 492px;
+  margin-bottom: 24px;
+  font-family: 'Outfit';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 120%;
+  color: var(--main-title-color);
+}
+
+.about-section-desc{
+  font-size: 18px;
+  line-height: 156%;
+  color: var(--main-desc-color);
+  margin-bottom: 20px;
+  width: 500px;
+}
+.about-section-desc > strong>ins{
+  color: #FE6B01;
+}
+
+.about-more__btn{
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  color: var(--header-bg-color);
+  padding: 18px 40px;
+  background-color: var(--main-btn-color);
+  border: 3px solid var(--main-btn-color);
+  border-radius: 4px;
+  margin-top: 28px;
+}
+
+.about-more__btn:hover{
+  color: var(--main-btn-color);
+  background-color: transparent;
+  border: 3px solid var(--main-btn-color);
+}
+
+
+
+
+/* About Section Styles End */
